@@ -1,0 +1,72 @@
+/* booklist.module.css */
+
+/* Styles for the booklist container */
+.booklist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 16px; /* Reduced padding for smaller screens */
+  align-items: center;
+}
+
+/* Styles for individual book items */
+.book {
+  gap: 16px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  width: 200px;
+}
+
+/* Styles for book cover images */
+.bookImage {
+  width: 100%; /* Make the image responsive */
+  max-height: 250px; /* Limit the maximum height */
+}
+
+/* Styles for book titles */
+.bookTitle {
+  color: black;
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+/* Styles for the "Book Details" button */
+.button {
+  width: 156px;
+  height: 36px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Media query for smartphones */
+@media (max-width: 767px) {
+  .booklist {
+    padding: 8px; /* Further reduced padding for smartphones */
+  }
+  .book {
+    width: calc(50% - 16px); /* Adjust width to 50% minus margin for two books in a row on smartphones */
+    margin: 8px; /* Reset margin for smartphones to create spacing between two books */
+  }
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .booklist {
+    justify-content: center; /* Center-align book items on tablets */
+  }
+  .book {
+    width: 300px; /* Adjust width for tablets */
+  }
+}

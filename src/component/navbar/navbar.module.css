@@ -1,0 +1,76 @@
+/* navbar.module.css */
+
+.container {
+  background: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logoTitle {
+  color: black;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.logoSubtitle {
+  color: black;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Center the search box in the middle of the navbar */
+.searchbox {
+/* Use flex-grow to fill half of the available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  width: 50%; /* Set the width to 50% to make it half of the navbar */
+}
+
+.searchInput {
+  background: transparent;
+  border: none;
+  width: 100%;
+  color: #000;
+  outline: none;
+  font-size: 1rem;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  color: black;
+}
+
+.icon{
+  color: #000;
+}
+
+/* Additional styling for the icons or other components if needed */
+
+/* Media Query for Smartphone */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}

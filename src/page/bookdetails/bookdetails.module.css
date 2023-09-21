@@ -1,0 +1,123 @@
+/* bookdetails.module.css */
+
+/* General styles */
+.book-details-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.details{
+  font-weight: bold;
+}
+
+.book-details-left {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-details-left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book-details-right {
+  flex: 1;
+  max-width: 60%;
+}
+
+.book-details-right h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.book-details-right p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button a:hover {
+  background-color: #0056b3;
+}
+
+.download-epub a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.download-epub a:hover {
+  background-color: #1e7e34;
+}
+
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Media queries for tablets and smartphones */
+@media (max-width: 768px) {
+  .book-details-page {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .book-details-left,
+  .book-details-right {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .book-details-right h2 {
+    font-size: 20px;
+  }
+  .book-details-left img {
+    max-width: 60%;
+    height: auto;
+  }
+
+  .book-details-right p {
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}

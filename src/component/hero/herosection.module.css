@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px;
+  }
+  
+  /* Media query for smartphones */
+  @media screen and (max-width: 767px) {
+    .container {
+      flex-direction: column; /* Stack elements vertically for small screens */
+      align-items: center; /* Center-align items for small screens */
+    }
+  }
+  
+  /* Media query for tablets */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      gap: 20px; /* Adjust gap for tablets */
+    }
+  
+    /* Add specific tablet styles here if needed */
+  }
+  
+  /* Media query for larger screens (desktops, laptops) */
+  @media screen and (min-width: 1024px) {
+    .container {
+      gap: 40px; /* Adjust gap for larger screens */
+    }
+  
+    /* Add specific styles for larger screens here if needed */
+  }
+  
