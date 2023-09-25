@@ -10,8 +10,11 @@ export const bookSlice = createSlice({
     name: 'books',
     initialState: {
         books: [],
-        isLoading: false
+        isLoading: false,
+        isSearch: false,
+        searchFilter: ''
     },
+
     reducers: {
         getBookFetch: (state) => {
             state.isLoading = true;
@@ -24,11 +27,23 @@ export const bookSlice = createSlice({
 
         getBookFailure: (state) => {
             state.isLoading = false;
-        }
+        },
+
+        startSearch: (state) => {
+          state.isSearch = true;
+        },
+
+        setSearchFilter: (state, action) => {
+          state.searchFilter = action.payload;
+        },
+
+        endSearch: (state) => {
+          state.isSearch = false;
+        },
     }
 });
 
-export const { getBookFetch, getBooksSuccess, getBookFailure } = bookSlice.actions;
+export const { getBookFetch, getBooksSuccess, getBookFailure,setSearchFilter,startSearch,endSearch } = bookSlice.actions;
 
 // export const fetchBooks = () => async (dispatch) => {
 //     dispatch(getBookFetch());

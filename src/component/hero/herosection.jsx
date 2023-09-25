@@ -6,8 +6,16 @@ import { useSelector } from 'react-redux/es/hooks/useSelector'
 
 
 const HeroSection= ()=> {
+  const isSearch = useSelector((state) => state.books.isSearch);
+
   const books = useSelector((state) => state.books.books);
   const DisplayBook = books.slice(0,2);
+
+  if (isSearch) {
+    return null;
+  }
+
+
   
   return (
     <div className={style.container}>
