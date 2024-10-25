@@ -1,70 +1,166 @@
-# Getting Started with Create React App
+# 📚 Book Library App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application for managing, exploring, and reading books for free. Built with React.js for the frontend and Strapi as a headless CMS backend, deployed on Firebase.
 
-## Available Scripts
+![Book Library Demo](/api/placeholder/800/400)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 📱 Responsive design for all devices
+- 📖 Free book reading with built-in e-reader
+- 📑 Bookmark and resume reading functionality
+- 📊 Book categories and tags
+- 📖 Detailed book information pages
+- 📝 CRUD operations for books
+- 📱 Progressive Web App (PWA) support for offline reading
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend:**
+  - React.js
+  - React Router for navigation
+  - Redux for state management
+  - Tailwind CSS for styling
+  - Axios for API requests
+  - React-PDF for PDF rendering
+  - EPUB.js for EPUB format support
 
-### `npm test`
+- **Backend:**
+  - Strapi Headless CMS
+  - PostgreSQL database
+  - REST API endpoints
+  - Cloud storage for book files
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Deployment:**
+  - Firebase Hosting
+  - Firebase Authentication
+  - Cloud Storage for books and images
 
-### `npm run build`
+## 📸 Screenshots Web
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/90472627-4603-45e2-9d9f-6a4c7807f0d9" alt="Screenshot 1" width="400" height="300"/>
+  <img src="https://github.com/user-attachments/assets/bf3e1443-4c8a-4a43-9286-fe066419449e" alt="Screenshot 1" width="400" height="300"/>
+  <img src="https://github.com/user-attachments/assets/58de9107-0198-4a9f-83e3-20e0a5d45f69" alt="Screenshot 1" width="400" height="300"/>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📸 Screenshots Mob
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/365425e5-dd6a-41a4-bd3f-438dbed7f20a" alt="Screenshot 1" width="200"/>
+  <img src="https://github.com/user-attachments/assets/e93c65d2-b342-46e4-b37e-6f426d760b6b" alt="Screenshot 1" width="200"/>
+  <img src="https://github.com/user-attachments/assets/0c6477c3-e480-42f0-806e-c0d628eab983" alt="Screenshot 1" width="200"/>
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js (v14 or higher)
+- npm or yarn
+- Firebase account
+- Strapi setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/book-library.git
+cd book-library
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install frontend dependencies:
+```bash
+cd frontend
+npm install
+```
 
-## Learn More
+3. Install Strapi dependencies:
+```bash
+cd backend
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Configure environment variables:
+```bash
+# Frontend .env
+REACT_APP_API_URL=your_strapi_url
+REACT_APP_FIREBASE_CONFIG=your_firebase_config
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Backend .env
+DATABASE_URL=your_database_url
+JWT_SECRET=your_jwt_secret
+```
 
-### Code Splitting
+5. Run the development servers:
+```bash
+# Frontend
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Backend
+npm run develop
+```
 
-### Analyzing the Bundle Size
+## 📖 Reading Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Supported Formats
+- PDF
+- EPUB
+- Text files
+- HTML
+- 
+### Offline Reading
+- Download books for offline access
+- Sync reading progress when online
+- Automatic bookmarking
 
-### Making a Progressive Web App
+## 📝 Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Firebase Setup
 
-### Advanced Configuration
+1. Create a new Firebase project
+2. Enable Authentication and Hosting
+3. Set up Cloud Storage for books
+4. Configure Firebase configuration in your React app
+5. Deploy using Firebase CLI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Strapi Setup
 
-### Deployment
+1. Configure database connection
+2. Set up content types for books and user progress
+3. Configure permissions
+4. Set up file upload providers
+5. Deploy Strapi backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔐 Environment Variables
 
-### `npm run build` fails to minify
+Create `.env` files in both frontend and backend directories:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```env
+# Frontend
+REACT_APP_API_URL=
+REACT_APP_FIREBASE_CONFIG=
+REACT_APP_STORAGE_BUCKET=
+
+# Backend
+DATABASE_URL=
+JWT_SECRET=
+ADMIN_JWT_SECRET=
+CLOUDINARY_NAME=
+CLOUDINARY_KEY=
+CLOUDINARY_SECRET=
+```
+
+## 🚀 Deployment
+
+### Frontend Deployment (Firebase)
+
+```bash
+npm run build
+firebase deploy
+```
+## 🙏 Acknowledgments
+
+- Strapi team for the amazing headless CMS
+- Firebase team for the hosting and authentication services
+- EPUB.js and React-PDF for reader functionality
+- All contributors who helped with the project
